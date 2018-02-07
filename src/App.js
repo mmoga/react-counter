@@ -22,7 +22,7 @@ class App extends Component {
     this.setState({count: 0})
   }
   handleValueChange(e){
-    this.setState({value: +e.target.value})
+    this.setState({value: +e.target.value}) // the unary operator "+" makes the number string a number
   }
   render() {
     // you can return only one HTML element per render, hence <div>
