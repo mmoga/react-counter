@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Email from './Email'; //"./" works because they are in the same folder
 
 class App extends Component {
   constructor() {
@@ -38,6 +39,7 @@ class App extends Component {
        <button className="btn btn-primary" onClick={this.decrement}>-</button>
        <h1>{this.state.count}</h1>
        <button className="btn btn-lg btn-primary" onClick={this.reset}>Reset</button>
+       <Email />
      </div>
     );
   }
