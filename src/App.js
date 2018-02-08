@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Email from './Email'; //"./" works because they are in the same folder
+import LoginForm from './LoginForm';
 
 class App extends Component {
   constructor() {
@@ -40,6 +41,7 @@ class App extends Component {
        <h1>{this.state.count}</h1>
        <button className="btn btn-lg btn-primary" onClick={this.reset}>Reset</button>
        <Email />
+       <LoginForm />
      </div>
     );
   }
