@@ -28,14 +28,16 @@ class App extends Component {
     // you can return only one HTML element per render, hence <div>
     return (
      <div>
+       <div className="form-group">
        <label>
          Value:
-       <input type="number" name="" id="" value={this.state.value} onChange={this.handleValueChange} />
+       <input type="number" className="form-control" name="" id="" value={this.state.value} onChange={this.handleValueChange} />
        </label>
-       <button onClick={this.increment}>+</button>
-       <button onClick={this.decrement}>-</button>
+       </div>
+       <button className="btn btn-primary" onClick={this.increment}>+</button>
+       <button className="btn btn-primary" onClick={this.decrement}>-</button>
        <h1>{this.state.count}</h1>
-       <button onClick={this.reset}>Reset</button>
+       <button className="btn btn-lg btn-primary" onClick={this.reset}>Reset</button>
      </div>
     );
   }
